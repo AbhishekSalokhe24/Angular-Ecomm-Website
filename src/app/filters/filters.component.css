@@ -1,0 +1,16 @@
+.btn{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid gray;
+    font-weight: 400;
+}
+.offcanvas{
+    color: #fff;
+    background-color: black;
+}
+#close-btn{
+    background-color: #fff;
+}
+.form-select{
+    background-color: gray;
+    border: none;
+}

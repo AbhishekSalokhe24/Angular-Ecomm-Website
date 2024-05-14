@@ -13,4 +13,4 @@ export class CardComponent {
   @Input() childArray: any[] | undefined;
   
   
-}
+} 

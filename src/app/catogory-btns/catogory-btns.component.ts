@@ -13,6 +13,11 @@ import { HttpClient } from '@angular/common/http';
 export class CatogoryBtnsComponent implements OnInit{
 
 
+  catBtnCliked() {
+  
+  }
+
+
 
   categories: any = [];
   newdata: any = [];
@@ -28,10 +33,10 @@ export class CatogoryBtnsComponent implements OnInit{
 
   getCategory(){
     this.productSev.getAllCategory().subscribe((res:any)=>{
-      console.log("From Btns component");
+      // console.log("From Btns component");
       this.categories = res;
-      console.log("displaying all categories.....");
-      console.log(this.categories);
+      // console.log("displaying all categories.....");
+      // console.log(this.categories);
     })
   }
   someData(categ: string) {
@@ -49,11 +54,11 @@ export class CatogoryBtnsComponent implements OnInit{
   btnCliked(categ: string) {
     // Logic to update products array
     this.someData(categ);
-    console.log("NEW DATA FROM BTNS...for = ",categ);
-    console.log(this.newdata)
+    // console.log("NEW DATA FROM BTNS...for = ",categ);
+    // console.log(this.newdata)
     let updatedProducts: any[] | undefined = []; // Updated data
     updatedProducts = this.newdata;
-    this.updateProducts.emit(updatedProducts);
-  }
+    this.updateProducts.emit(updatedProducts); 
+  } 
   
 }
